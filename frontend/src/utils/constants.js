@@ -1,4 +1,4 @@
-export const URL = "https://api.kupi.nomoredomains.club";
+export const URL = "https://kupi.nomoredomains.club/api";
 
 export const MINIMUM_PASSWORD_LENGTH = 3;
 export const MINIMUM_USERNAME_LENGTH = 3;
