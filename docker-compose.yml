@@ -39,11 +39,13 @@ services:
         volumes:
             # монтируем директорию ./pg-data основной ОС в директорию с данными в контейнере
             - pgdata:/var/lib/postgresql/data
+
     certbot:
         image: certbot/certbot
         volumes:
             - ./certbot/conf:/etc/letsencrypt
             - ./certbot/www:/var/www/certbot
         command: certonly --webroot -w /var/www/certbot --force-renewal --email oxidjini@ya.ru -d kupi.nomoredomains.club --agree-tos
+
 volumes:
     pgdata:
